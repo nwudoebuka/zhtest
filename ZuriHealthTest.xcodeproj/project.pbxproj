@@ -1,0 +1,936 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		902AC80BDA9229547D132D84 /* Pods_ZuriHealthTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E227AC3CAD04E71987EA1A2 /* Pods_ZuriHealthTest.framework */; };
+		9645A278F44F0B390D5439A5 /* Pods_ZuriHealthTest_ZuriHealthTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A60BDC68573D71DA6F49DA51 /* Pods_ZuriHealthTest_ZuriHealthTestUITests.framework */; };
+		A8FE64768CC16E0E0D4515A0 /* Pods_ZuriHealthTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06D0D27AEC8497B8C0A906F3 /* Pods_ZuriHealthTestTests.framework */; };
+		F57E0745288352B300071310 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E0744288352B300071310 /* AppDelegate.swift */; };
+		F57E0747288352B300071310 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E0746288352B300071310 /* SceneDelegate.swift */; };
+		F57E0749288352B300071310 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E0748288352B300071310 /* ViewController.swift */; };
+		F57E074C288352B300071310 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57E074A288352B300071310 /* Main.storyboard */; };
+		F57E074F288352B300071310 /* ZuriHealthTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F57E074D288352B300071310 /* ZuriHealthTest.xcdatamodeld */; };
+		F57E0751288352B600071310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F57E0750288352B600071310 /* Assets.xcassets */; };
+		F57E0754288352B600071310 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57E0752288352B600071310 /* LaunchScreen.storyboard */; };
+		F57E075F288352B600071310 /* ZuriHealthTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E075E288352B600071310 /* ZuriHealthTestTests.swift */; };
+		F57E0769288352B600071310 /* ZuriHealthTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E0768288352B600071310 /* ZuriHealthTestUITests.swift */; };
+		F57E076B288352B600071310 /* ZuriHealthTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E076A288352B600071310 /* ZuriHealthTestUITestsLaunchTests.swift */; };
+		F57E077B2883592F00071310 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E077A2883592F00071310 /* MainCoordinator.swift */; };
+		F57E077D2883597700071310 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E077C2883597700071310 /* Coordinator.swift */; };
+		F57E077F288359F800071310 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E077E288359F800071310 /* MainPageViewController.swift */; };
+		F57E078128835ABF00071310 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E078028835ABF00071310 /* BaseViewController.swift */; };
+		F57E078428835F1000071310 /* BasketItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E078328835F1000071310 /* BasketItemsTableViewCell.swift */; };
+		F57E07882883607500071310 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E07872883607500071310 /* UIView+Constraints.swift */; };
+		F57E078B2883819B00071310 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E078A2883819B00071310 /* ResponseModel.swift */; };
+		F57E078D2883829000071310 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E078C2883829000071310 /* ItemsViewController.swift */; };
+		F57E0790288388C600071310 /* ItemsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E078F288388C600071310 /* ItemsCollectionViewCell.swift */; };
+		F57E07932883FF9F00071310 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E07922883FF9E00071310 /* Service.swift */; };
+		F57E0795288400B200071310 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E0794288400B200071310 /* NetworkError.swift */; };
+		F57E07972884030B00071310 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E07962884030B00071310 /* Constants.swift */; };
+		F57E07992884071C00071310 /* ObservationalObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E07982884071B00071310 /* ObservationalObject.swift */; };
+		F57E079C288408EF00071310 /* ItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E079B288408EF00071310 /* ItemsViewModel.swift */; };
+		F57E07A0288436E600071310 /* UIImageView+NetworkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E079F288436E600071310 /* UIImageView+NetworkImage.swift */; };
+		F57E07AF288466F500071310 /* MorkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E07AE288466F300071310 /* MorkService.swift */; };
+		F57E07B228846D6B00071310 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E07B128846D6B00071310 /* CoreDataStack.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F57E075B288352B600071310 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F57E0739288352B300071310 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F57E0740288352B300071310;
+			remoteInfo = ZuriHealthTest;
+		};
+		F57E0765288352B600071310 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F57E0739288352B300071310 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F57E0740288352B300071310;
+			remoteInfo = ZuriHealthTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06D0D27AEC8497B8C0A906F3 /* Pods_ZuriHealthTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZuriHealthTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E227AC3CAD04E71987EA1A2 /* Pods_ZuriHealthTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZuriHealthTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DB9E1D45527480C12809D52 /* Pods-ZuriHealthTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZuriHealthTest.debug.xcconfig"; path = "Target Support Files/Pods-ZuriHealthTest/Pods-ZuriHealthTest.debug.xcconfig"; sourceTree = "<group>"; };
+		39981ED8A33FFFF9669E14D9 /* Pods-ZuriHealthTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZuriHealthTest.release.xcconfig"; path = "Target Support Files/Pods-ZuriHealthTest/Pods-ZuriHealthTest.release.xcconfig"; sourceTree = "<group>"; };
+		67EA68E6058865F6A2AD6A69 /* Pods-ZuriHealthTest-ZuriHealthTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZuriHealthTest-ZuriHealthTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-ZuriHealthTest-ZuriHealthTestUITests/Pods-ZuriHealthTest-ZuriHealthTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A302DEC5BD6AF597FC90872 /* Pods-ZuriHealthTest-ZuriHealthTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZuriHealthTest-ZuriHealthTestUITests.release.xcconfig"; path = "Target Support Files/Pods-ZuriHealthTest-ZuriHealthTestUITests/Pods-ZuriHealthTest-ZuriHealthTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9EC63CCED021F369772C1D02 /* Pods-ZuriHealthTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZuriHealthTestTests.debug.xcconfig"; path = "Target Support Files/Pods-ZuriHealthTestTests/Pods-ZuriHealthTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A60BDC68573D71DA6F49DA51 /* Pods_ZuriHealthTest_ZuriHealthTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZuriHealthTest_ZuriHealthTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C14D9A0A33F20EB632B3A488 /* Pods-ZuriHealthTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZuriHealthTestTests.release.xcconfig"; path = "Target Support Files/Pods-ZuriHealthTestTests/Pods-ZuriHealthTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		F57E0741288352B300071310 /* ZuriHealthTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZuriHealthTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57E0744288352B300071310 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F57E0746288352B300071310 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F57E0748288352B300071310 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F57E074B288352B300071310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F57E074E288352B300071310 /* ZuriHealthTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZuriHealthTest.xcdatamodel; sourceTree = "<group>"; };
+		F57E0750288352B600071310 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F57E0753288352B600071310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F57E0755288352B600071310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F57E075A288352B600071310 /* ZuriHealthTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZuriHealthTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57E075E288352B600071310 /* ZuriHealthTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZuriHealthTestTests.swift; sourceTree = "<group>"; };
+		F57E0764288352B600071310 /* ZuriHealthTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZuriHealthTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57E0768288352B600071310 /* ZuriHealthTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZuriHealthTestUITests.swift; sourceTree = "<group>"; };
+		F57E076A288352B600071310 /* ZuriHealthTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZuriHealthTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F57E077A2883592F00071310 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		F57E077C2883597700071310 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F57E077E288359F800071310 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		F57E078028835ABF00071310 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F57E078328835F1000071310 /* BasketItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketItemsTableViewCell.swift; sourceTree = "<group>"; };
+		F57E07872883607500071310 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		F57E078A2883819B00071310 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		F57E078C2883829000071310 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		F57E078F288388C600071310 /* ItemsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsCollectionViewCell.swift; sourceTree = "<group>"; };
+		F57E07922883FF9E00071310 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		F57E0794288400B200071310 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		F57E07962884030B00071310 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F57E07982884071B00071310 /* ObservationalObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationalObject.swift; sourceTree = "<group>"; };
+		F57E079B288408EF00071310 /* ItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewModel.swift; sourceTree = "<group>"; };
+		F57E079F288436E600071310 /* UIImageView+NetworkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+NetworkImage.swift"; sourceTree = "<group>"; };
+		F57E07AE288466F300071310 /* MorkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorkService.swift; sourceTree = "<group>"; };
+		F57E07B128846D6B00071310 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F57E073E288352B300071310 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				902AC80BDA9229547D132D84 /* Pods_ZuriHealthTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57E0757288352B600071310 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8FE64768CC16E0E0D4515A0 /* Pods_ZuriHealthTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57E0761288352B600071310 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9645A278F44F0B390D5439A5 /* Pods_ZuriHealthTest_ZuriHealthTestUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		477A6406D2D3A8F28EA70766 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E227AC3CAD04E71987EA1A2 /* Pods_ZuriHealthTest.framework */,
+				A60BDC68573D71DA6F49DA51 /* Pods_ZuriHealthTest_ZuriHealthTestUITests.framework */,
+				06D0D27AEC8497B8C0A906F3 /* Pods_ZuriHealthTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4345808D18EDE6A5F08CC52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2DB9E1D45527480C12809D52 /* Pods-ZuriHealthTest.debug.xcconfig */,
+				39981ED8A33FFFF9669E14D9 /* Pods-ZuriHealthTest.release.xcconfig */,
+				67EA68E6058865F6A2AD6A69 /* Pods-ZuriHealthTest-ZuriHealthTestUITests.debug.xcconfig */,
+				8A302DEC5BD6AF597FC90872 /* Pods-ZuriHealthTest-ZuriHealthTestUITests.release.xcconfig */,
+				9EC63CCED021F369772C1D02 /* Pods-ZuriHealthTestTests.debug.xcconfig */,
+				C14D9A0A33F20EB632B3A488 /* Pods-ZuriHealthTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F57E0738288352B300071310 = {
+			isa = PBXGroup;
+			children = (
+				F57E0743288352B300071310 /* ZuriHealthTest */,
+				F57E075D288352B600071310 /* ZuriHealthTestTests */,
+				F57E0767288352B600071310 /* ZuriHealthTestUITests */,
+				F57E0742288352B300071310 /* Products */,
+				B4345808D18EDE6A5F08CC52 /* Pods */,
+				477A6406D2D3A8F28EA70766 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F57E0742288352B300071310 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F57E0741288352B300071310 /* ZuriHealthTest.app */,
+				F57E075A288352B600071310 /* ZuriHealthTestTests.xctest */,
+				F57E0764288352B600071310 /* ZuriHealthTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F57E0743288352B300071310 /* ZuriHealthTest */ = {
+			isa = PBXGroup;
+			children = (
+				F57E07B028846D6B00071310 /* CoreData */,
+				F57E079A288408D300071310 /* ViewModel */,
+				F57E07912883FF5E00071310 /* Network */,
+				F57E07892883817D00071310 /* Model */,
+				F57E07852883603700071310 /* Helper */,
+				F57E07792883591300071310 /* Coordinator */,
+				F57E07782883585900071310 /* View */,
+				F57E07772883584A00071310 /* Support Files */,
+				F57E0755288352B600071310 /* Info.plist */,
+				F57E074D288352B300071310 /* ZuriHealthTest.xcdatamodeld */,
+			);
+			path = ZuriHealthTest;
+			sourceTree = "<group>";
+		};
+		F57E075D288352B600071310 /* ZuriHealthTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				F57E075E288352B600071310 /* ZuriHealthTestTests.swift */,
+			);
+			path = ZuriHealthTestTests;
+			sourceTree = "<group>";
+		};
+		F57E0767288352B600071310 /* ZuriHealthTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F57E0768288352B600071310 /* ZuriHealthTestUITests.swift */,
+				F57E076A288352B600071310 /* ZuriHealthTestUITestsLaunchTests.swift */,
+			);
+			path = ZuriHealthTestUITests;
+			sourceTree = "<group>";
+		};
+		F57E07772883584A00071310 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F57E0744288352B300071310 /* AppDelegate.swift */,
+				F57E0746288352B300071310 /* SceneDelegate.swift */,
+				F57E0748288352B300071310 /* ViewController.swift */,
+				F57E074A288352B300071310 /* Main.storyboard */,
+				F57E0750288352B600071310 /* Assets.xcassets */,
+				F57E0752288352B600071310 /* LaunchScreen.storyboard */,
+				F57E07982884071B00071310 /* ObservationalObject.swift */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		F57E07782883585900071310 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F57E078E288388A600071310 /* collectionviewcells */,
+				F57E078228835EEC00071310 /* tableviewcells */,
+				F57E077E288359F800071310 /* MainPageViewController.swift */,
+				F57E078028835ABF00071310 /* BaseViewController.swift */,
+				F57E078C2883829000071310 /* ItemsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F57E07792883591300071310 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F57E077A2883592F00071310 /* MainCoordinator.swift */,
+				F57E077C2883597700071310 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F57E078228835EEC00071310 /* tableviewcells */ = {
+			isa = PBXGroup;
+			children = (
+				F57E078328835F1000071310 /* BasketItemsTableViewCell.swift */,
+			);
+			path = tableviewcells;
+			sourceTree = "<group>";
+		};
+		F57E07852883603700071310 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F57E07862883605900071310 /* extensions */,
+				F57E07962884030B00071310 /* Constants.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F57E07862883605900071310 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F57E07872883607500071310 /* UIView+Constraints.swift */,
+				F57E079F288436E600071310 /* UIImageView+NetworkImage.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		F57E07892883817D00071310 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F57E078A2883819B00071310 /* ResponseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F57E078E288388A600071310 /* collectionviewcells */ = {
+			isa = PBXGroup;
+			children = (
+				F57E078F288388C600071310 /* ItemsCollectionViewCell.swift */,
+			);
+			path = collectionviewcells;
+			sourceTree = "<group>";
+		};
+		F57E07912883FF5E00071310 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F57E07922883FF9E00071310 /* Service.swift */,
+				F57E0794288400B200071310 /* NetworkError.swift */,
+				F57E07AE288466F300071310 /* MorkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F57E079A288408D300071310 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F57E079B288408EF00071310 /* ItemsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F57E07B028846D6B00071310 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F57E07B128846D6B00071310 /* CoreDataStack.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F57E0740288352B300071310 /* ZuriHealthTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F57E076E288352B600071310 /* Build configuration list for PBXNativeTarget "ZuriHealthTest" */;
+			buildPhases = (
+				B9B79BC6BE8A22F1CF246FE0 /* [CP] Check Pods Manifest.lock */,
+				F57E073D288352B300071310 /* Sources */,
+				F57E073E288352B300071310 /* Frameworks */,
+				F57E073F288352B300071310 /* Resources */,
+				D389A7F0A60AC70968D96D1A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZuriHealthTest;
+			productName = ZuriHealthTest;
+			productReference = F57E0741288352B300071310 /* ZuriHealthTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F57E0759288352B600071310 /* ZuriHealthTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F57E0771288352B600071310 /* Build configuration list for PBXNativeTarget "ZuriHealthTestTests" */;
+			buildPhases = (
+				48F806ADBF28B88B63CAB03F /* [CP] Check Pods Manifest.lock */,
+				F57E0756288352B600071310 /* Sources */,
+				F57E0757288352B600071310 /* Frameworks */,
+				F57E0758288352B600071310 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F57E075C288352B600071310 /* PBXTargetDependency */,
+			);
+			name = ZuriHealthTestTests;
+			productName = ZuriHealthTestTests;
+			productReference = F57E075A288352B600071310 /* ZuriHealthTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F57E0763288352B600071310 /* ZuriHealthTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F57E0774288352B600071310 /* Build configuration list for PBXNativeTarget "ZuriHealthTestUITests" */;
+			buildPhases = (
+				3CDED151EAFE17168492E798 /* [CP] Check Pods Manifest.lock */,
+				F57E0760288352B600071310 /* Sources */,
+				F57E0761288352B600071310 /* Frameworks */,
+				F57E0762288352B600071310 /* Resources */,
+				FD9A3E8C2F418028D25B669B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F57E0766288352B600071310 /* PBXTargetDependency */,
+			);
+			name = ZuriHealthTestUITests;
+			productName = ZuriHealthTestUITests;
+			productReference = F57E0764288352B600071310 /* ZuriHealthTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F57E0739288352B300071310 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					F57E0740288352B300071310 = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					F57E0759288352B600071310 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = F57E0740288352B300071310;
+					};
+					F57E0763288352B600071310 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = F57E0740288352B300071310;
+					};
+				};
+			};
+			buildConfigurationList = F57E073C288352B300071310 /* Build configuration list for PBXProject "ZuriHealthTest" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F57E0738288352B300071310;
+			productRefGroup = F57E0742288352B300071310 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F57E0740288352B300071310 /* ZuriHealthTest */,
+				F57E0759288352B600071310 /* ZuriHealthTestTests */,
+				F57E0763288352B600071310 /* ZuriHealthTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F57E073F288352B300071310 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57E0754288352B600071310 /* LaunchScreen.storyboard in Resources */,
+				F57E0751288352B600071310 /* Assets.xcassets in Resources */,
+				F57E074C288352B300071310 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57E0758288352B600071310 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57E0762288352B600071310 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CDED151EAFE17168492E798 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZuriHealthTest-ZuriHealthTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48F806ADBF28B88B63CAB03F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZuriHealthTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9B79BC6BE8A22F1CF246FE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZuriHealthTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D389A7F0A60AC70968D96D1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZuriHealthTest/Pods-ZuriHealthTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZuriHealthTest/Pods-ZuriHealthTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZuriHealthTest/Pods-ZuriHealthTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD9A3E8C2F418028D25B669B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZuriHealthTest-ZuriHealthTestUITests/Pods-ZuriHealthTest-ZuriHealthTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZuriHealthTest-ZuriHealthTestUITests/Pods-ZuriHealthTest-ZuriHealthTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZuriHealthTest-ZuriHealthTestUITests/Pods-ZuriHealthTest-ZuriHealthTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F57E073D288352B300071310 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57E07B228846D6B00071310 /* CoreDataStack.swift in Sources */,
+				F57E0749288352B300071310 /* ViewController.swift in Sources */,
+				F57E07A0288436E600071310 /* UIImageView+NetworkImage.swift in Sources */,
+				F57E07932883FF9F00071310 /* Service.swift in Sources */,
+				F57E078D2883829000071310 /* ItemsViewController.swift in Sources */,
+				F57E077F288359F800071310 /* MainPageViewController.swift in Sources */,
+				F57E078428835F1000071310 /* BasketItemsTableViewCell.swift in Sources */,
+				F57E078B2883819B00071310 /* ResponseModel.swift in Sources */,
+				F57E07AF288466F500071310 /* MorkService.swift in Sources */,
+				F57E0745288352B300071310 /* AppDelegate.swift in Sources */,
+				F57E07972884030B00071310 /* Constants.swift in Sources */,
+				F57E077D2883597700071310 /* Coordinator.swift in Sources */,
+				F57E0747288352B300071310 /* SceneDelegate.swift in Sources */,
+				F57E0795288400B200071310 /* NetworkError.swift in Sources */,
+				F57E0790288388C600071310 /* ItemsCollectionViewCell.swift in Sources */,
+				F57E078128835ABF00071310 /* BaseViewController.swift in Sources */,
+				F57E07882883607500071310 /* UIView+Constraints.swift in Sources */,
+				F57E077B2883592F00071310 /* MainCoordinator.swift in Sources */,
+				F57E07992884071C00071310 /* ObservationalObject.swift in Sources */,
+				F57E074F288352B300071310 /* ZuriHealthTest.xcdatamodeld in Sources */,
+				F57E079C288408EF00071310 /* ItemsViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57E0756288352B600071310 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57E075F288352B600071310 /* ZuriHealthTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57E0760288352B600071310 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57E076B288352B600071310 /* ZuriHealthTestUITestsLaunchTests.swift in Sources */,
+				F57E0769288352B600071310 /* ZuriHealthTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F57E075C288352B600071310 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F57E0740288352B300071310 /* ZuriHealthTest */;
+			targetProxy = F57E075B288352B600071310 /* PBXContainerItemProxy */;
+		};
+		F57E0766288352B600071310 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F57E0740288352B300071310 /* ZuriHealthTest */;
+			targetProxy = F57E0765288352B600071310 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F57E074A288352B300071310 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F57E074B288352B300071310 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F57E0752288352B600071310 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F57E0753288352B600071310 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F57E076C288352B600071310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F57E076D288352B600071310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F57E076F288352B600071310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DB9E1D45527480C12809D52 /* Pods-ZuriHealthTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S44H7ZBAXH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZuriHealthTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinch.photoapp.ZuriHealthTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F57E0770288352B600071310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39981ED8A33FFFF9669E14D9 /* Pods-ZuriHealthTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S44H7ZBAXH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZuriHealthTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinch.photoapp.ZuriHealthTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F57E0772288352B600071310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EC63CCED021F369772C1D02 /* Pods-ZuriHealthTestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S44H7ZBAXH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinch.photoapp.ZuriHealthTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZuriHealthTest.app/ZuriHealthTest";
+			};
+			name = Debug;
+		};
+		F57E0773288352B600071310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C14D9A0A33F20EB632B3A488 /* Pods-ZuriHealthTestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S44H7ZBAXH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinch.photoapp.ZuriHealthTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZuriHealthTest.app/ZuriHealthTest";
+			};
+			name = Release;
+		};
+		F57E0775288352B600071310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67EA68E6058865F6A2AD6A69 /* Pods-ZuriHealthTest-ZuriHealthTestUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S44H7ZBAXH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinch.photoapp.ZuriHealthTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZuriHealthTest;
+			};
+			name = Debug;
+		};
+		F57E0776288352B600071310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A302DEC5BD6AF597FC90872 /* Pods-ZuriHealthTest-ZuriHealthTestUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S44H7ZBAXH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinch.photoapp.ZuriHealthTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZuriHealthTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F57E073C288352B300071310 /* Build configuration list for PBXProject "ZuriHealthTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F57E076C288352B600071310 /* Debug */,
+				F57E076D288352B600071310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F57E076E288352B600071310 /* Build configuration list for PBXNativeTarget "ZuriHealthTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F57E076F288352B600071310 /* Debug */,
+				F57E0770288352B600071310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F57E0771288352B600071310 /* Build configuration list for PBXNativeTarget "ZuriHealthTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F57E0772288352B600071310 /* Debug */,
+				F57E0773288352B600071310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F57E0774288352B600071310 /* Build configuration list for PBXNativeTarget "ZuriHealthTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F57E0775288352B600071310 /* Debug */,
+				F57E0776288352B600071310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F57E074D288352B300071310 /* ZuriHealthTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F57E074E288352B300071310 /* ZuriHealthTest.xcdatamodel */,
+			);
+			currentVersion = F57E074E288352B300071310 /* ZuriHealthTest.xcdatamodel */;
+			path = ZuriHealthTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F57E0739288352B300071310 /* Project object */;
+}
